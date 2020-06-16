@@ -1,0 +1,159 @@
+/* 公共的样式部分 */
+
+
+/* 公共的logo样式 */
+
+.logo a {
+    margin-top: 17px;
+    display: block;
+    width: 49px;
+    height: 49px;
+    background: url(../images/mi-home.png) no-repeat;
+    background-color: rgb(235, 206, 129);
+}
+
+
+/* 鼠标经过  logo 放大 */
+
+.logo a:hover {
+    background-size: 60px 60px;
+    background-position: -6px -7px;
+}
+
+
+/* 公共的导航栏样式 */
+
+nav {
+    height: 85px;
+    background-color: rgba(0, 0, 0, 0.78);
+}
+
+nav .container div:nth-child(n+2) {
+    height: 83px;
+    font-size: 24px;
+    line-height: 85px;
+    text-align: center;
+}
+
+nav .container div:nth-child(n+6) {
+    font-size: 16px;
+    overflow: hidden;
+}
+
+nav .container div:nth-child(n+2) a {
+    color: rgb(191, 191, 211);
+}
+
+nav .container div:nth-child(n+2) a:hover {
+    display: block;
+    height: 83px;
+    border-bottom: 2px solid rgb(243, 194, 88);
+    color: rgb(213, 170, 79);
+    background: linear-gradient(#000, rgb(114, 88, 33))
+}
+
+
+/* 利用媒体查询当设备小于750px时 更改字体大小 达到响应式目的 */
+
+@media screen and (max-width: 750px) {
+    nav .container div:nth-child(n+2) {
+        font-size: 16px;
+    }
+    nav .container div:nth-child(n+6) {
+        font-size: 12px;
+    }
+}
+
+
+/* 公共的尾部样式 */
+
+footer .link .container .row div {
+    margin-top: 5px;
+    font-size: 12px;
+    border-right: 1px solid rgb(207, 216, 230);
+}
+
+footer .link .container .row div a {
+    color: #666;
+}
+
+footer .link .container .row div a:hover {
+    color: #c81623;
+}
+
+footer p {
+    padding-top: 30px;
+    font-size: 12px;
+    text-align: center;
+}
+
+
+/* 暂为登入，注册页面公共样式 */
+
+.login-h {
+    height: 85px;
+}
+
+.row .hint {
+    font-size: 26px;
+    line-height: 85px;
+    color: rgb(74, 74, 74);
+    cursor: default;
+}
+
+.row .hint span {
+    padding: 10px;
+    background: linear-gradient(to bottom left, rgb(150, 127, 255), rgb(0, 190, 255));
+    border-radius: 5px;
+}
+
+.row .hint span:hover {
+    padding: 10px;
+    background: linear-gradient(to top right, rgb(150, 127, 255), rgb(0, 190, 255));
+}
+
+.suggest a {
+    display: block;
+    margin-top: 60px;
+    color: #666;
+    font-size: 12px;
+}
+
+.suggest a span {
+    padding-right: 2px;
+    top: 2px;
+    float: left;
+}
+
+.suggest a:hover {
+    color: #f40;
+}
+
+.notice {
+    height: 38.5px;
+    line-height: 38.5px;
+    text-align: center;
+    background-color: #fff8f0;
+    color: #999;
+    font-size: 12px;
+}
+
+.notice .container .row span {
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.notice .container .row:hover .hd {
+    height: 500px;
+    position: absolute;
+    color: red;
+    top: 20px;
+    line-height: 18px;
+    left: 47%;
+    font-size: 12px;
+}
+
+.hd {
+    height: 0px;
+    overflow: hidden;
+}

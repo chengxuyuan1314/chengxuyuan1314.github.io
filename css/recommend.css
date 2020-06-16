@@ -1,0 +1,212 @@
+/* 推荐的样式 */
+
+
+/* 推荐头部的样式 */
+
+header {
+    height: 85px;
+    background-color: rgba(26, 26, 26, 0.95);
+}
+
+.home {
+    font-size: 40px;
+    line-height: 85px;
+}
+
+header .container .row div:nth-child(2) {
+    line-height: 85px;
+    font-size: 26px;
+    color: #fff;
+    border-radius: 10px;
+    background: linear-gradient(to top right, rgb(150, 127, 255), rgb(0, 190, 255));
+    cursor: default;
+    text-align: center;
+}
+
+header .container .row div:nth-child(2):hover {
+    background: linear-gradient(to bottom left, rgb(150, 127, 255), rgb(0, 190, 255));
+}
+
+.title {
+    font-size: 24px;
+    margin-top: 30px !important;
+    color: rgb(193, 194, 213);
+}
+
+.title span {
+    float: left;
+}
+
+
+/* 媒体查询 */
+
+@media screen and (max-width: 750px) {
+    .title {
+        font-size: 18px;
+        margin-top: 38px !important;
+    }
+}
+
+
+/* 旋转的动画 */
+
+@keyframes rotate {
+    0% {}
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+
+main {
+    position: relative;
+    overflow: hidden;
+    height: 636px;
+    background-color: gray;
+    background: url(../upload/bc.gif) no-repeat;
+    background-size: 100% 100%;
+}
+
+.purchase {
+    position: absolute;
+    width: 230px;
+    height: 70px;
+    background: linear-gradient(to right, rgb(26, 26, 26), rgb(45, 90, 132));
+    bottom: 50px;
+    left: 51px;
+    transition: left 0.6;
+}
+
+@media screen and (max-width:1200px) {
+    .purchase {
+        left: 10px;
+    }
+}
+
+.purchase a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 36px;
+    margin-left: 38px;
+    margin-top: 10px;
+}
+
+.purchase a:hover span {
+    color: #fff;
+}
+
+.purchase a span {
+    width: 100%;
+    height: 100%;
+    color: rgb(162, 162, 162);
+}
+
+main a {
+    perspective: 1500px;
+    margin: 30px auto;
+    display: block;
+    height: 650px;
+    width: 450px !important;
+}
+
+
+/* 引入动画和暂停动画 */
+
+.rotateBox {
+    position: relative;
+    height: 650px;
+    width: 450px;
+    transform-style: preserve-3d;
+    animation: rotate 25s infinite linear;
+}
+
+.rotateBox:hover {
+    animation-play-state: paused;
+}
+
+.rotateBox>div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.rotateBox div:nth-child(-n+2) {
+    height: 530px;
+    width: 250px;
+    border-radius: 24px;
+    overflow: hidden;
+}
+
+.rotateBox div:nth-child(n+3) {
+    width: 390px;
+    height: 250px;
+    border-radius: 13px;
+    transition: all 0.8s;
+}
+
+.rotateBox div:nth-child(n+3):hover {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    top: 49%;
+}
+
+.rotateBox div:first-child {
+    transform: translate(-50%, -50%) rotateY(180deg);
+}
+
+.rotateBox div:nth-child(3) {
+    background: url(../upload/advantage.jpg) no-repeat;
+    background-position: -240px -112px;
+    transform: translate3d(-50%, -50%, 400px);
+}
+
+.rotateBox .advantage .introduce {
+    position: absolute;
+    width: 100%;
+    height: 45px;
+    background-color: pink;
+    top: 228px;
+    left: 196px;
+    border-radius: 0;
+    background-color: rgb(238, 238, 238);
+}
+
+.rotateBox .advantage .introduce h3 {
+    transform: rotateY(180deg);
+    text-align: center;
+    margin-top: 10px !important;
+    color: rgb(66, 66, 66);
+}
+
+
+/* 将图片文字进行旋转 */
+
+.rotateBox div:nth-child(4) {
+    background: url(../upload/advantage.jpg) no-repeat;
+    background-position: -980px -112px;
+    transform: translate(-50%, -50%) rotateY(60deg) translateZ(400px);
+}
+
+.rotateBox div:nth-child(5) {
+    background: url(../upload/advantage.jpg) no-repeat;
+    background-position: -240px -358px;
+    transform: translate(-50%, -50%) rotateY(120deg) translateZ(400px);
+}
+
+.rotateBox div:nth-child(6) {
+    background: url(../upload/advantage.jpg) no-repeat;
+    background-position: -980px -358px;
+    transform: translate(-50%, -50%) rotateY(180deg) translateZ(400px);
+}
+
+.rotateBox div:nth-child(7) {
+    background: url(../upload/advantage.jpg) no-repeat;
+    background-position: -240px -605px;
+    transform: translate(-50%, -50%) rotateY(240deg) translateZ(400px);
+}
+
+.rotateBox div:nth-child(8) {
+    background: url(../upload/advantage.jpg) no-repeat;
+    background-position: -980px -605px;
+    transform: translate(-50%, -50%) rotateY(300deg) translateZ(400px);
+}

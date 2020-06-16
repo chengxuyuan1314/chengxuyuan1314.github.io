@@ -1,0 +1,18 @@
+/* 基础样式达到全局效果 */
+
+a:hover {
+    text-decoration: none;
+    color: #f40;
+}
+
+a {
+    color: #666;
+}
+
+input {
+    outline: none;
+}
+
+ul li {
+    list-style: none;
+}

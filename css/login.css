@@ -1,0 +1,186 @@
+/* 登录得主体部分 */
+
+main {
+    height: 475px;
+    background: url(../upload/loginbc.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.login-screen {
+    margin-top: 10px;
+    height: 400px;
+    background-color: #fff;
+}
+
+
+/* 注意事项 */
+
+.ln-notice {
+    height: 35.5px;
+    background-color: rgb(255, 248, 240);
+    color: rgb(153, 153, 153);
+    font-size: 12px;
+    text-align: center;
+    line-height: 35.5px;
+}
+
+.ln-title {
+    overflow: hidden;
+    height: 55px;
+    background-color: #fff;
+    color: #666;
+    line-height: 55px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.ln-title h4 {
+    margin-top: 20px;
+    font-weight: 600;
+    cursor: default;
+}
+
+.ln-title h4:hover {
+    color: rgb(228, 57, 60);
+}
+
+
+/* 登录表单 */
+
+.ln-form {
+    height: 220px;
+    margin: 35px 20px;
+    margin-bottom: 0px;
+}
+
+.ln-form form input {
+    border: 1px solid #bdbdbd;
+    border-left: 0;
+    padding-left: 10px;
+    height: 38px;
+    width: 284px;
+    color: rgb(177, 177, 177);
+    margin-bottom: 19px;
+}
+
+.ln-form form input:nth-child(2) {
+    top: 3px;
+}
+
+.ln-form form label span {
+    line-height: 38px;
+    text-align: center;
+    top: 2px;
+    border: 1px solid #bdbdbd;
+    width: 39px;
+    height: 38px;
+    background-color: rgb(243, 243, 243);
+    color: rgb(212, 212, 212);
+}
+
+.password {
+    top: 3px !important;
+}
+
+.forget {
+    overflow: hidden;
+}
+
+.ln-form .forget a {
+    float: right;
+    margin-right: 20px;
+    color: rgb(102, 102, 102);
+}
+
+.ln-form .forget a:hover {
+    color: rgb(228, 57, 60);
+}
+
+.ln-form .enter {
+    height: 33px;
+    width: 250px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 33px;
+    margin: 15px auto;
+    background-color: rgb(228, 57, 60);
+}
+
+
+/* 媒体查询达到响应式布局 */
+
+@media screen and (max-width: 600px) {
+    .ln-form form input {
+        width: 190px;
+    }
+    .ln-form .enter {
+        width: 160px;
+    }
+    .ln-notice {
+        font-size: 9px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .ln-form form input {
+        width: 160px;
+    }
+}
+
+.ln-form .enter a {
+    color: #fff;
+}
+
+
+/* 其他登录方式 */
+
+.other-login {
+    border-top: 1px solid rgb(244, 244, 244);
+    height: 54.2px;
+    background-color: rgb(250, 250, 250);
+    line-height: 54.2px;
+    padding: 0px 20px;
+}
+
+.other-login .tx {
+    width: 18px;
+    height: 18px;
+    float: left;
+    margin-right: 5px;
+    margin-top: 17px;
+    background: url(../images/tx.png) no-repeat;
+}
+
+.other-login div:nth-of-type(1) {
+    background-position: -1px 0px;
+}
+
+.other-login div:nth-of-type(2) {
+    background-position: -20px 0px;
+}
+
+.other-login span:nth-of-type(2) {
+    padding: 0px 10px;
+}
+
+.other-login span {
+    float: left;
+}
+
+.other-login a {
+    float: right;
+    color: rgb(201, 201, 201);
+}
+
+.other-login a:hover {
+    color: rgb(228, 57, 60);
+}
+
+.other-login a span {
+    top: 18px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    color: #fff;
+    background-color: #b61d1d;
+}

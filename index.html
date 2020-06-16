@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>手机购-首页 手购商城，品牌手机、品牌产品、官网正品保障</title>
+    <meta name="keywords" content='手购，手购官网,vivo智能手机,小米手机大全,华为新款手机，小米10 Pro NEX3 5G手机,vivo X27手机,vivo X27官网,iQOO，vivo售后，vivo专卖店，vivo体验店，vivo社区，NEX，vivo U1' />
+    <meta name="description" content='手购是一个专注于智能手机领域的国际化品牌，智能手机官方网站提供旗下手机资讯，售前咨询，在线购买，售后服务。vivo智能手机当季明星机型有X27，iQOO手机，NEX3 5G版等，在手购官网购买手机可以享受12期免息付款。' />
+    <!-- bootstrap样式 公共样式 基础样式 专有引入 网址ico引入 -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="shortcut icon" href="icon.ico" type="image/x-icon">
+    <!-- 解决低版本不兼容问题 -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+    <!-- 一个锚点链接 固定在屏幕右中间 点击回到顶部 -->
+    <a href="#nav" class="top">
+        <span class="glyphicon glyphicon-menu-up"></span>
+    </a>
+    <!-- 导航栏 大部分网页通用 样式写在commom.css-->
+    <nav id="nav">
+        <div class="container">
+            <div class="row">
+                <!--logo 点击logo可以返回主页-->
+                <div class="col-xs-2 logo">
+                    <a href="index.html"></a>
+                </div>
+                <div class="col-xs-2 ">
+                    <a href="index.html">首页</a>
+                </div>
+                <div class="col-xs-2">
+                    <a href="recommend.html">推荐</a>
+                </div>
+                <div class="col-xs-2">
+                    <a href="ranking1.html">排名</a>
+                </div>
+                <div class="col-xs-2">
+                    <a href="detail.html">详情</a>
+                </div>
+                <div class="col-xs-1">
+                    <a href="login.html">登录</a>
+                </div>
+                <div class="col-xs-1">
+                    <a href="register.html">注册</a>
+                </div>
+            </div>
+        </div>
+
+
+    </nav>
+
+
+    <!-- 一个轮播图 5s 切换图片  点击下面li标签 也可直接跳转  点击右箭头切换下一张，左箭头上一张-->
+    <section class="container">
+
+        <!-- 利用字体图标和定位显示左箭头和右箭头在屏幕的左中央和右中央 -->
+        <span class="glyphicon glyphicon-menu-left" id="left"></span>
+        <span class="glyphicon glyphicon-menu-right" id="right"></span>
+        <div class="row">
+            <img src="upload/mat1.jpg" alt="" id="img">
+            <ul id="ul">
+                <li id="mat1"><span>小米10</span></li>
+                <li id="mat2"><span>小米cc9pro</span></li>
+                <li id="mat3"><span>华为mate30</span></li>
+                <li id="mat4"><span>vivo IQ003</span></li>
+                <li id="mat5"> <span>vivo Z6</span></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- 首页的产品部分 用的栅格系统 随着屏幕大小改变布局 -->
+    <main>
+
+        <!-- 一些推荐的新产品 在小屏幕以上均分3份  超小屏幕占一份 -->
+        <div class="product-one container">
+            <h2>探索新产品</h2>
+            <div class="row">
+                <div class="col-sm-4"><img src="upload/newpro4.jpg" alt=""></div>
+                <div class="col-sm-4"><img src="upload/newpro6.jpg" alt=""></div>
+                <div class="col-sm-4"><img src="upload/newpro5.jpg" alt=""></div>
+            </div>
+        </div>
+        <!-- 小米的专栏  中等屏幕以上分成4份  小屏幕分成两份 超小独占一份 -->
+        <div class="product-mi container">
+            <h2>小米专栏</h2>
+            <div class="row">
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <img src="upload/mi1.webp">
+                    <h5>小米10</h5>
+                    <p>骁龙865/1亿像素手机</p>
+                    <p>3999元起</p>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <img src="upload/mi2.webp">
+                    <h5>Redmi K30</h5>
+                    <p>120Hz流速屏，全速热爱</p>
+                    <p>1599元起</p>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <img src="upload/mi3.webp">
+                    <h5>Redmi K30 5G</h5>
+                    <p>双模5G,120Hz流速屏</p>
+                    <p>3999元起</p>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <img src="upload/mi4.webp">
+                    <h5>小米CC9</h5>
+                    <p>一亿像素</p>
+                    <p>2599元起<s>2799元</s></p>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <img src="upload/mi5.webp">
+                    <h5>Redmi 8</h5>
+                    <p>5000mAh超长续航</p>
+                    <p>699元起<s>799</s></p>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <img src="upload/mi6.webp">
+                    <h5>Redmi 8A</h5>
+                    <p>5000mAh超长续航</p>
+                    <p>599元起<s>699</s></p>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <img src="upload/mi7.webp">
+                    <h5>Redmi Note 8 Pro</h5>
+                    <p>6400万全场景像素</p>
+                    <p>1199元起<s>1399</s></p>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <img src="upload/mi8.webp">
+                    <h5>Redmi Note 8</h5>
+                    <p>千元4800万四摄</p>
+                    <p>999元起</p>
+                </div>
+            </div>
+        </div>
+        <div class="product-mi container">
+            <!-- 华为专栏和上面小米布局一致 -->
+            <h2>华为专栏</h2>
+            <div class="row">
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <img src="upload/h1.png">
+                    <h5>HUAWEI Mate Xs</h5>
+                    <p>赠半价换屏服务</p>
+                    <p>16999元起</p>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <img src="upload/h2.png">
+                    <h5>荣耀20 PRO</h5>
+                    <p>最高优惠500</p>
+                    <p>2499元起</p>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <img src="upload/h3.png">
+                    <h5>HUAWEI nove 5z</h5>
+                    <p>限时直降200元</p>
+                    <p>1399元起</p>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <img src="upload/h4.png">
+                    <h5>荣耀v30Pro</h5>
+                    <p>限时优惠200元|享免息</p>
+                    <p>3999元起</p>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <img src="upload/h5.png">
+                    <h5>HUAWEI nova 6</h5>
+                    <p>最高直降300|24期免息</p>
+                    <p>899元起</p>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <img src="upload/h7.png">
+                    <h5>HUAWEI MateBook 13</h5>
+                    <p>2k全面屏 &nbsp;| &nbsp;3期免息</p>
+                    <p>5299元起</p>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <img src="upload/h6.png">
+                    <h5>荣耀Play3</h5>
+                    <p>最高优惠300元</p>
+                    <p>899元起</p>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <img src="upload/h8.png">
+                    <h5>荣耀20青春版</h5>
+                    <p>最高优惠400</p>
+                    <p>999元起</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!--网页尾部 所有网页通用-->
+    <footer>
+        <div class="link">
+            <div class="container">
+                <hr>
+                <div class="row">
+                    <div class="col-md-1 col-sm-2 col-xs-3"><a href="#">关于我们</a></div>
+                    <div class="col-md-1 col-sm-2 col-xs-3"><a href="#">联系我们</a></div>
+                    <div class="col-md-1 col-sm-2 col-xs-3"><a href="#">联系客服</a></div>
+                    <div class="col-md-1 col-sm-2 col-xs-3"><a href="#">合作招商</a></div>
+                    <div class="col-md-1 col-sm-2 col-xs-3"><a href="#">商家帮助</a></div>
+                    <div class="col-md-1 col-sm-2 col-xs-3"><a href="#">营销中心</a></div>
+                    <div class="col-md-1 col-sm-2 col-xs-3"><a href="#">手机app</a></div>
+                    <div class="col-md-1 col-sm-2 col-xs-3"><a href="#">友情链接</a></div>
+                    <div class="col-md-1 col-sm-2 col-xs-3"><a href="#">销售联盟</a></div>
+                    <div class="col-md-1 col-sm-2 col-xs-3"><a href="#">购社区</a></div>
+                    <div class="col-md-1 col-sm-2 col-xs-3"><a href="#">风险监测</a></div>
+                    <div class="col-md-1 col-sm-2 col-xs-3"><a href="#">隐私测略</a></div>
+                </div>
+            </div>
+        </div>
+
+        <p class="container">
+            广告投放合作：6666 站长信箱：6666. 免责声明：本站所有内容来源于互联网。如果本站部分内容侵犯您的权益，请您告知，站长会立即处理。 所做网址只为学习，不做任何商业活动。
+        </p>
+
+        <hr>
+    </footer>
+    <!-- 轮播图js -->
+    <script src="script/carousel-index.js"></script>
+</body>
+
+</html>

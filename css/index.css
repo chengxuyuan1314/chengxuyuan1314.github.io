@@ -1,0 +1,205 @@
+/* 返回顶部样式 */
+
+.top {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    right: 10px;
+    top: 50%;
+    transform: translate(0px, -50%);
+    background: linear-gradient(to top right, rgb(150, 127, 255), rgb(0, 190, 255));
+    text-align: center;
+    line-height: 60px;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+
+/* 顶部经过事件样式 */
+
+.top:hover {
+    background: linear-gradient(to bottom left, rgb(150, 127, 255), rgb(0, 190, 255));
+    color: #fff;
+}
+
+
+/* 轮播图样式 */
+
+section {
+    position: relative;
+    height: 500px;
+}
+
+
+/* 左右小箭头 绝对定位样式 */
+
+#left,
+#right {
+    border-radius: 50%;
+    position: absolute;
+    width: 30px;
+    color: #fff;
+    height: 30px;
+    background-color: rgb(57, 51, 57);
+    text-align: center;
+    font-size: 16px;
+    line-height: 30px;
+    cursor: pointer;
+    z-index: 10;
+    top: 50%;
+    transform: (0, -50%);
+}
+
+#left:hover,
+#right:hover {
+    transform: scale(0.9);
+}
+
+#left {
+    left: 5px;
+}
+
+#right {
+    right: 5px;
+}
+
+section .row {
+    position: relative;
+}
+
+
+/* 轮播图图片样式 */
+
+section .row img {
+    width: 100%;
+    display: inline-block;
+    height: 500px;
+}
+
+
+/* 轮播图中底部列表样式 */
+
+section .row ul {
+    width: 500px;
+    height: 50px;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+section .row ul li {
+    cursor: pointer;
+    height: 50px;
+    float: left;
+    color: rgb(90, 90, 90);
+    font-size: 16px;
+    line-height: 44px;
+    margin-right: 20px;
+    padding-bottom: 4px;
+    font-weight: 600;
+    border-bottom: 2px solid rgb(158, 158, 158);
+}
+
+section .row ul li:hover {
+    color: #000;
+}
+
+
+/* 利用媒体查询对图片 字体调节  达到响应式目的 */
+
+@media screen and (max-width: 800px) {
+    section .row ul li {
+        font-size: 12px;
+        margin-right: 10px;
+    }
+    section {
+        height: 450px;
+    }
+    section .row img {
+        height: 450px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    section .row ul {
+        width: 330px;
+        text-align: left;
+        padding-left: 0px;
+        left: 10%;
+        transform: translate(0, 0);
+    }
+    section {
+        height: 380px;
+    }
+    section .row img {
+        height: 380px;
+    }
+}
+
+
+/* 产品 */
+
+
+/* 新产品 */
+
+main h2 {
+    text-align: center;
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+
+.product-one .row div img {
+    display: inline-block;
+    width: 100%;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+
+.product-one .row div img:hover {
+    transform: scale(0.9);
+}
+
+.product-one {
+    padding-top: 62px;
+}
+
+
+/* 小米和华为栏目公共样式 */
+
+.product-mi div {
+    text-align: center;
+    background-color: #fff;
+}
+
+.product-mi div img {
+    display: inline-block;
+    width: 80%;
+}
+
+.product-mi div img:hover {
+    transform: scale(0.9);
+}
+
+.product-mi div h5 {
+    font-weight: 500;
+    color: rgb(57, 51, 57);
+    font-size: 16px;
+}
+
+.product-mi div p s {
+    font-size: 14px;
+    color: rgb(194, 194, 194);
+    margin-left: 5px;
+}
+
+.product-mi div p:nth-of-type(1) {
+    font-size: 12px;
+    color: rgb(183, 193, 217);
+}
+
+.product-mi div p:nth-of-type(2) {
+    font-size: 16px;
+    color: rgb(255, 103, 0);
+}

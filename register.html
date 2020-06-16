@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>手机购-欢迎注册</title>
+    <!-- bootstrap样式 公共样式 基础样式 专有引入 网址ico引入 -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/register.css">
+    <script src="jquery/jquery-1.11.0.min.js"></script>
+    <link rel="shortcut icon" href="icon.ico" type="image/x-icon">
+    <!-- 解决低版本不兼容问题 -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+    <script>
+        $(function() {
+            $("#account").on("blur", function() {
+                if ($("#account").val()) {
+
+                    $("#span1").css("color", "green");
+                } else {
+                    $("#span1").css("color", "red");
+                }
+            })
+
+            $("#tel").on("blur", function() {
+                if ($("#tel").val()) {
+
+                    $("#span2").css("color", "green");
+                } else {
+                    $("#span2").css("color", "red");
+                }
+            })
+            $("#password").on("blur", function() {
+                if ($("#password").val()) {
+
+                    $("#span3").css("color", "green");
+                } else {
+                    $("#span3").css("color", "red");
+                }
+            })
+            $("#ccode").on("blur", function() {
+                if ($("#ccode").val() && $("#password").val() == $("#ccode").val()) {
+
+                    $("#span4").css("color", "green");
+                } else {
+                    $("#span4").css("color", "red");
+                }
+            })
+
+        })
+    </script>
+</head>
+
+<body>
+    <!-- 注册样式跟 登入样式类似  多加了个表单验证 -->
+    <header class="login-h">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-1 logo col-md-offset-2">
+                    <a href="index.html"></a>
+                </div>
+                <div class="col-xs-6   col-xs-offset-3 col-md-offset-0 hint"><span>欢迎注册</span></div>
+                <div class="col-xs-2 suggest"><a href="#"><span class="glyphicon glyphicon-comment visible-md visible-lg"></span><span class="visible-md visible-lg">"注册界面"改进</span>建议</a></div>
+
+            </div>
+        </div>
+
+    </header>
+    <div class="notice">
+        <div class="container">
+            <div class="row">
+                <p class="visible-md visible-lg">为确保您账户的安全及正常使用，依《网络安全法》相关要求，6月1日起会员账户需绑定手机。如您还未绑定，请尽快完成，感谢您的理解及支持!</p>
+                <span class="hidden-md hidden-lg ">注意</span>
+
+                <div class="hd hidden-md hidden-lg ">为确保您账户的安全及正常使用，依《网络安全法》相关要求，6月1日起会员账户需绑定手机。如您还未绑定，请尽快完成，感谢您的理解及支持!</div>
+            </div>
+        </div>
+
+    </div>
+
+    <section class="register">
+        <div class="container">
+            <div class="row">
+                <div class="register-screen col-lg-4 col-lg-offset-7 col-md-5 col-md-offset-6 col-sm-6 col-sm-offset-3 col-xs-8 col-xs-offset-2 ">
+                    <div class="row">
+                        <div class="re-notice"><span class="glyphicon glyphicon-exclamation-sign"></span>平台不会以任何理由要求您转账汇款，谨防诈骗。</div>
+                        <div class="re-title">
+                            <h4>用户注册</h4>
+                        </div>
+                        <div class="re-login">
+                            <span>我有账号！去<a href="login.html">登录</a></span>
+                        </div>
+                        <!-- 注册表单 -->
+                        <div class="re-form">
+                            <form action="#">
+
+                                <ul>
+                                    <li><label for="account">用户名：</label><input id="account" type="text"> <span class="glyphicon glyphicon-exclamation-sign" id="span1"></span></li>
+                                    <li><label for="tel">手机号码：</label><input id="tel" type="tel"> <span class="glyphicon glyphicon-exclamation-sign" id="span2"></span></li>
+                                    <li> <label for="password">密码：</label><input id="password" type="password"> <span class="glyphicon glyphicon-exclamation-sign " id="span3"></span></li>
+                                    <li> <label for="ccode">确认密码：</label><input id="ccode" type="password"> <span class="glyphicon glyphicon-exclamation-sign" id="span4"></span></li>
+                                    <li> <input type="checkbox" checked="checked" id="checkbox"><span>我已阅读并同意<a href="#">&lt;手机购服务条款&gt;</a class="glyphicon glyphicon-exclamation-sign" id="span5"> 和 <a href="#">&lt;隐私政策&gt;</a></span></li>
+
+                                    <li><span class="re-hint" id="hint"></span></li>
+                                    <li> <input type="submit" value="立即注册" id="submit"></li>
+                                </ul>
+
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="link ">
+            <div class="container ">
+                <hr>
+                <div class="row ">
+                    <div class="col-md-1 col-sm-2 col-xs-3 "><a href="# ">关于我们</a></div>
+                    <div class="col-md-1 col-sm-2 col-xs-3 "><a href="# ">联系我们</a></div>
+                    <div class="col-md-1 col-sm-2 col-xs-3 "><a href="# ">联系客服</a></div>
+                    <div class="col-md-1 col-sm-2 col-xs-3 "><a href="# ">合作招商</a></div>
+                    <div class="col-md-1 col-sm-2 col-xs-3 "><a href="# ">商家帮助</a></div>
+                    <div class="col-md-1 col-sm-2 col-xs-3 "><a href="# ">营销中心</a></div>
+                    <div class="col-md-1 col-sm-2 col-xs-3 "><a href="# ">手机app</a></div>
+                    <div class="col-md-1 col-sm-2 col-xs-3 "><a href="# ">友情链接</a></div>
+                    <div class="col-md-1 col-sm-2 col-xs-3 "><a href="# ">销售联盟</a></div>
+                    <div class="col-md-1 col-sm-2 col-xs-3 "><a href="# ">购社区</a></div>
+                    <div class="col-md-1 col-sm-2 col-xs-3 "><a href="# ">风险监测</a></div>
+                    <div class="col-md-1 col-sm-2 col-xs-3 "><a href="# ">隐私测略</a></div>
+                </div>
+            </div>
+        </div>
+
+        <p class="container ">广告投放合作：6666 站长信箱：6666. 免责声明：本站所有内容来源于互联网。如果本站部分内容侵犯您的权益，请您告知， 所做网址只为学习，不做任何商业活动。
+
+        </p>
+
+        <hr>
+    </footer>
+
+</body>

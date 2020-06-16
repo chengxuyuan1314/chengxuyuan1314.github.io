@@ -1,0 +1,158 @@
+/* 排名页面 */
+
+section {
+    background-color: rgb(245, 245, 245);
+}
+
+.left {
+    background-color: #fff;
+}
+
+.left .title {
+    height: 70px;
+    background-color: #fff;
+    line-height: 70px;
+    text-align: center;
+    color: rgb(206, 42, 36);
+    font-size: 20px;
+    font-weight: 600;
+    border-bottom: 1px solid rgb(245, 245, 245);
+}
+
+.left .rank-method {
+    height: 70px;
+    background-color: #fff;
+}
+
+.left .rank-method a {
+    font-size: 18px;
+    line-height: 70px;
+    text-align: center;
+    color: rgb(51, 51, 51);
+    padding: 0px 36px;
+}
+
+.left .rank-method a:hover {
+    color: rgb(206, 42, 36);
+}
+
+.left .rank-body ul {
+    padding-left: 0px;
+}
+
+.left .rank-body ul li div:nth-child(n+2) {
+    text-align: center;
+}
+
+
+/* 内容部分利用flew布局 */
+
+.left .rank-body ul li {
+    position: relative;
+    height: 60px;
+    display: flex;
+    line-height: 60px;
+}
+
+.left .rank-body ul li .head {
+    padding-left: 20px;
+}
+
+.left .rank-body ul li:first-child {
+    background-color: rgb(187, 224, 243);
+}
+
+.left .rank-body ul li div:first-child {
+    width: 380px;
+    color: #333;
+    font-size: 16px;
+}
+
+.left .rank-body ul li:first-child .head {
+    font-size: 18px;
+}
+
+.left .rank-body ul li:first-child div:nth-child(n+2) {
+    font-size: 18px;
+    color: rgb(51, 122, 183);
+}
+
+.left .rank-body ul li:first-child div:last-child {
+    font-size: 20px;
+}
+
+.left .rank-body ul li div:nth-child(n+2) {
+    flex: 1;
+    font-size: 16px;
+}
+
+.left .rank-body ul li div:nth-child(6) {
+    font-size: 18px;
+    color: rgb(66, 168, 223);
+}
+
+.head .rank-num {
+    color: rgb(175, 178, 181);
+    font-size: 20px;
+    font-weight: 600;
+    padding-right: 10px;
+}
+
+.left .rank-body ul li:nth-child(-n+4) .head .rank-num {
+    color: rgb(254, 144, 46);
+}
+
+.left .rank-body ul li:nth-child(2) .head .rank-num {
+    color: rgb(209, 67, 62);
+}
+
+.head .last {
+    font-size: 12px;
+    color: rgb(199, 177, 162);
+    margin-left: 5px;
+}
+
+ul li .mask {
+    position: absolute;
+    height: 60px;
+    background-color: rgb(0, 126, 255);
+    opacity: 0.1;
+}
+
+@media screen and (max-width: 1400px) {
+    .left .rank-body ul li div:first-child {
+        width: 260px;
+    }
+}
+
+.right {
+    background-color: #fff;
+    margin-bottom: 10px;
+    height: 1410px;
+}
+
+.right .big-box {
+    height: 100%;
+}
+
+.right .big-box div:nth-child(n+2) {
+    width: 100%;
+    height: 200px;
+    margin: 10px 0px;
+    text-align: center;
+}
+
+.right-title {
+    overflow: hidden;
+    line-height: 39px;
+}
+
+.right .big-box h4 {
+    float: left;
+    margin-left: 10px;
+}
+
+.right .big-box span {
+    float: right;
+    margin-right: 5px;
+}

@@ -1,0 +1,114 @@
+/* 注册样式 跟登录样式 基本一致 */
+
+.register {
+    height: 600px;
+    background: url(../upload/registerbc.jpg) no-repeat;
+    background-size: 100% 100%;
+    background-position: 0 -50px;
+}
+
+.register-screen {
+    margin-top: 10px;
+    height: 500px;
+    background-color: #fff;
+}
+
+.re-notice {
+    height: 35.5px;
+    background-color: rgb(255, 248, 240);
+    color: rgb(153, 153, 153);
+    font-size: 12px;
+    text-align: center;
+    line-height: 35.5px;
+}
+
+.re-title {
+    overflow: hidden;
+    height: 55px;
+    background-color: #fff;
+    color: #666;
+    line-height: 55px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.re-title h4 {
+    margin-top: 20px;
+    font-weight: 600;
+    cursor: default;
+}
+
+.re-title h4:hover {
+    color: rgb(228, 57, 60);
+}
+
+.re-login {
+    overflow: hidden;
+}
+
+.re-login span {
+    font-size: 12px;
+    padding: 5px 0px;
+    float: right;
+    padding-right: 8px;
+}
+
+.re-form form ul li {
+    height: 30px;
+    margin-bottom: 20px;
+    line-height: 30px;
+}
+
+.re-form form ul li label {
+    width: 100px;
+    text-align: right;
+    padding-right: 15px;
+}
+
+.re-form form ul li:nth-child(5) {
+    width: 100%;
+    text-align: center;
+}
+
+.re-form form ul li:nth-child(5) input {
+    width: max-content;
+}
+
+.re-form form ul li:nth-child(6) {
+    width: 100%;
+    text-align: center;
+}
+
+.re-form form ul li input[type="submit"] {
+    margin-left: 60px;
+    background-color: rgb(253, 128, 0);
+    border: 0;
+    width: 200px;
+    height: 30px;
+    color: #fff;
+    font-weight: 600;
+}
+
+
+/* 媒体查询 */
+
+@media screen and (max-width: 600px) {
+    .re-form form ul li input {
+        width: 120px;
+    }
+    .re-form form ul {
+        padding-left: 10px;
+    }
+    .re-form form ul li label {
+        width: 90px;
+    }
+    .re-form form ul li input[type="submit"] {
+        margin-left: 20px;
+    }
+    .re-form form ul li:nth-child(5) {
+        font-size: 12px;
+    }
+    .re-notice {
+        font-size: 9px;
+    }
+}
